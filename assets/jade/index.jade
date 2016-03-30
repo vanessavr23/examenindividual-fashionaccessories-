@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	meta(name='viewport', content='width=device-width, initial-scale=1')
+	title Fashion Accessories
+	link(rel="stylesheet", href="assets/css/bootstrap.css")
+	link(rel="stylesheet", href="assets/css/bootstrap.min.css")
+	link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Raleway")
+	link(rel="stylesheet", href="assets/font-awesome/css/font-awesome.min.css")
+	link(rel="stylesheet", href="assets/sass/main.css")
+body
+	mixin barra
+		.container
+			.row
+				.col-md-4
+				.col-md-4
+					span <
+					span LATEST
+					span BESTSELLER
+					span SALE
+					span >
+				.col-md-4
+	mixin blog
+		h4 THE SAMPLE HEADING TITLE
+		p 27/11/2015
+		p Lorem ipsum dolor sit amet, consectur adipisic ing elit, sed do...
+		p.rojo Read more
+	mixin caracter1
+		p Deliver Wide
+		i.fa.fa-star
+		i.fa.fa-star
+		i.fa.fa-star
+		i.fa.fa-star-o
+		i.fa.fa-star-o
+		i.fa.fa-star-o
+	mixin caracter2
+		p Deliver Wide
+		p $218.00
+		i.fa.fa-star
+		i.fa.fa-star
+		i.fa.fa-star
+		i.fa.fa-star-o
+		i.fa.fa-star-o
+		i.fa.fa-star-o
+		.compra
+			i.fa.fa-shopping-cart
+			span Add to Cart
+
+	nav.navbar.navbar-default.navbar-fixed-top
+		.container
+			.navbar-header.page-scroll
+				button.navbar-toggle(type="button", data-toggle="collapse", data-target="#bs-example-navbar-collapse-1")
+					span.sr-only Toggle navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a.navbar-brand.page-scroll Default Welcome Msg!
+			.collapse.navbar-collapse#bs-example-navbar-collapse-1
+				ul.nav.navbar-nav.navbar-right
+					li.hidden.active
+						a(href="#")
+					li
+						img(src="assets/images/flag1.png", alt="")
+						a.page-scroll(href="#") Lenguaje
+						span 
+							i.fa.fa-angle-down
+					li
+						a.page-scroll(href="#") $ Currency
+						i.fa.fa-angle-down
+					li
+						i.fa.fa-user
+						a.page-scroll(href="#") My Account
+						i.fa.fa-angle-down
+	header
+		.container
+			.row
+				.col-md-3
+					p OPENING TIME
+					p 9.00 AM - 10.00 PM
+				.col-md-6
+					img(src="assets/images/logo.png", alt="")
+				.col-md-3
+					input(type="text", placeholder="search")
+	section.plomo
+		.container
+			.row
+				.col-md-1
+					h3 HOME
+				.col-md-2
+					h3 CONTACT US
+				.col-md-7
+				.col-md-2
+					p My Cart
+					p item(s) - $244.00
+	section.slider1
+		.container
+			.text-center
+				h1 AUTUMN/WINTER LOOKBOOK
+				P - 2016 COLLECTION -
+	section.banner
+		.container
+			.row
+				.col-md-5.banner1
+				.col-md-7.banner2
+	section.barra
+		+barra
+	section.productos
+		.container
+			.row
+				.col-md-3
+					.cuadro.text-center
+						img(src="assets/images/a1.jpg", alt="")
+						+caracter1
+						p $218.00
+				.col-md-3
+					.cuadro.text-center
+						img(src="assets/images/b1.jpg", alt="")
+						+caracter1
+						p $242.00 $218.00
+				.col-md-3
+					.cuadro.text-center
+						img(src="assets/images/c1.jpg", alt="")
+						+caracter1
+						p $242.00 $218.00
+				.col-md-3
+					.cuadro.text-center
+						img(src="assets/images/d1.jpg", alt="")
+						+caracter1
+						p $218.00
+	section.logos
+		.container
+			.col-md-2
+				img(src="assets/images/client1.jpg", alt="")
+			.col-md-2
+				img(src="assets/images/client2.jpg", alt="")
+			.col-md-2
+				img(src="assets/images/client3.jpg", alt="")
+			.col-md-2
+				img(src="assets/images/client4.jpg", alt="")
+			.col-md-2
+				img(src="assets/images/client5.jpg", alt="")
+			.col-md-2
+				img(src="assets/images/client6.jpg", alt="")
+	section.barra
+		+barra
+	section.catalogo
+		.container
+			.row
+				.col-md-4
+					.col-md-6
+						.cuadro
+							img(src="assets/images/a2.jpg", alt="")
+					.col-md-6
+						+caracter2
+				.col-md-4
+					.col-md-6
+						.cuadro
+							img(src="assets/images/d2.jpg", alt="")
+					.col-md-6
+						+caracter2
+				.col-md-4
+					.col-md-6
+						.cuadro
+							img(src="assets/images/g2.jpg", alt="")
+					.col-md-6
+						+caracter2
+			.row
+				.col-md-4
+					.col-md-6
+						.cuadro
+							img(src="assets/images/c2.jpg", alt="")
+					.col-md-6
+						+caracter2
+				.col-md-4
+					.col-md-6
+						.cuadro
+							img(src="assets/images/c2.jpg", alt="")
+					.col-md-6
+						+caracter2
+				.col-md-4
+					.col-md-6
+						.cuadro
+							img(src="assets/images/e2.jpg", alt="")
+					.col-md-6
+						+caracter2
+	section.barra
+		+barra
+	section.blog
+		.container
+			.row
+				.col-md-3
+					img(src="assets/images/blog2.jpg", alt="")
+					+blog
+				.col-md-3
+					img(src="assets/images/blog1.jpg", alt="")
+					+blog
+				.col-md-3
+					img(src="assets/images/blog2.jpg", alt="")
+					+blog
+				.col-md-3
+					img(src="assets/images/blog3.jpg", alt="")
+					+blog
+	section.info
+		.container
+			.row
+				.col-md-4
+					.col-md-4
+						i.fa.fa-phone-square
+					.col-md-8
+						p ORDER ONLINE NOW
+						p Call Us: (0123)456 789
+				.col-md-4
+					.col-md-4
+						i.fa.fa-plane
+					.col-md-8
+						p FREE WORLDWIDE SHIPPING
+						p On Order Over $100
+				.col-md-4
+					.col-md-4
+						i.fa.fa-money
+					.col-md-8
+						p 30 DAYS MONEY BACK 100%
+						p Satidfaction Guarantee
+	section.datos
+		.container
+			.row
+				.col-md-3
+					h4 ACCESSORIES
+					p Lorem ipsum dolor sit amet, consectetur adipisic ing elit, sed do eiusmod tempor incididunt ut labor et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris
+					i.fa.fa-facebook
+					i.fa.fa-twitter
+					i.fa.fa-rss
+					i.fa.fa-skype
+					i.fa.fa-dribbble
+				.col-md-2
+					h4 MY ACCOUNT
+					p My Account
+					p Order History
+					p Wish List
+					p Newsletter
+				.col-md-2
+					h4 INFORMATION
+					p About Us
+					p Delivery Information
+					p Privacy Policy
+					p Terms & Conditions
+				.col-md-2
+					h4 EXTRAS
+					p Brands
+					p Gift Vouchers
+					p Affiliates
+					p Specials
+				.col-md-3
+					h4 ABOUT US
+					row
+						.col-md-2
+							i.fa.fa-map-marker
+							i.fa.fa-phone
+							i.fa.fa-envelope
+						.col-md-10
+							p 8901 Marmora Road, Glasgow D04 89
+							p GR, New York
+							p (0123)456789
+							p (0987) 654321
+							p admin@bootexperts.com
+	footer
+		.container
+			.row
+				.col-md-10
+					p Copyright © 2015 BootEperts. All rights reserved.
+				.col-md-2
+					img(src="assets/images/payment.png", alt="")
