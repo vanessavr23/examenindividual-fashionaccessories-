@@ -13,19 +13,19 @@ body
 	mixin barra
 		.container
 			.row
-				.col-md-4
-				.col-md-4
+				.col-md-4.linea
+				.col-md-4.letra
 					span <
 					span LATEST
 					span BESTSELLER
 					span SALE
 					span >
-				.col-md-4
+				.col-md-4.linea
 	mixin blog
 		h4 THE SAMPLE HEADING TITLE
 		p 27/11/2015
 		p Lorem ipsum dolor sit amet, consectur adipisic ing elit, sed do...
-		p.rojo Read more
+		p.rojo Read more...
 	mixin caracter1
 		p Deliver Wide
 		i.fa.fa-star
@@ -61,27 +61,27 @@ body
 					li.hidden.active
 						a(href="#")
 					li
-						img(src="assets/images/flag1.png", alt="")
+						
 						a.page-scroll(href="#") Lenguaje
-						span 
-							i.fa.fa-angle-down
 					li
 						a.page-scroll(href="#") $ Currency
-						i.fa.fa-angle-down
 					li
-						i.fa.fa-user
+						
 						a.page-scroll(href="#") My Account
-						i.fa.fa-angle-down
 	header
 		.container
 			.row
 				.col-md-3
-					p OPENING TIME
-					p 9.00 AM - 10.00 PM
-				.col-md-6
+					.col-md-2
+						i.fa.fa-clock-o
+					.col-md-10
+						h3 OPENING TIME
+						p 9.00 AM - 10.00 PM
+				.col-md-6.text-center
 					img(src="assets/images/logo.png", alt="")
 				.col-md-3
 					input(type="text", placeholder="search")
+					i.fa.fa-search
 	section.plomo
 		.container
 			.row
@@ -90,19 +90,22 @@ body
 				.col-md-2
 					h3 CONTACT US
 				.col-md-7
-				.col-md-2
-					p My Cart
+				.col-md-2.carro
+					i.fa.fa-shopping-cart
+					span &nbsp; My Cart
 					p item(s) - $244.00
 	section.slider1
 		.container
-			.text-center
+			.text-center.caja
 				h1 AUTUMN/WINTER LOOKBOOK
 				P - 2016 COLLECTION -
 	section.banner
 		.container
 			.row
 				.col-md-5.banner1
+					img(src="assets/images/banner1.jpg", alt="")
 				.col-md-7.banner2
+					img(src="assets/images/banner2.jpg", alt="")
 	section.barra
 		+barra
 	section.productos
